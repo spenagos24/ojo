@@ -35,7 +35,7 @@
   box-sizing: border-box;
   font-style: italic;
   font-family: georgia;
-  color: #fff;
+ 
 }
 
 body {
@@ -918,6 +918,7 @@ border-radius: 12px;
   display: inline-block;  /* Permite que el contenedor tenga el tamaño adecuado */
   right: 28px;
 border-radius: 20px;
+color: #fff;
 }
 
 #botonsito{
@@ -928,7 +929,7 @@ border-radius: 20px;
   background: transparent;
   border: none;
   cursor: pointer;
-  color: black; /* Color del icono */
+  color: #fff; /* Color del icono */
   border: 1px solid #fff;
 
 }
@@ -940,13 +941,18 @@ border-radius: 20px;
   width: 200px; /* Ancho del input, ajusta según tus necesidades */
   padding: 10px 10px 10px 40px; /* Agrega un padding extra para dejar espacio para el icono */
   font-size: 16px;
-  border: 1px solid #ccc;
+ 
   border-radius: 4px;
   transition: all 0.3s ease;
   display: none; /* Inicialmente oculto */
-  background: #000;
+  background: var(--color-pagina);
 }
-
+#searchinput{
+  color: #fff;
+}
+.search-input::placeholder{
+  color: #fff;
+}
 .search-input.active {
   display: block; /* Muestra el input cuando tiene la clase active */
 }
